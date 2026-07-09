@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Vercel
+.vercel/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs & caches
+*.log
+.cache/

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michelle & Tom — Wedding Invitation</title>
+  <meta name="description" content="You are invited to the wedding of Michelle & Tom — 13 December 2026 at The Verandah, The Repulse Bay." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" data-i18n="brand">Michelle & Tom</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#details" data-i18n="navDetails">Details</a>
+      <a href="#rundown" data-i18n="navRundown">The Day</a>
+      <a href="#venue" data-i18n="navVenue">Venue</a>
+      <a href="#gallery" data-i18n="navGallery">Gallery</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">繁</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Invitation hero">
+      <div class="hero-media">
+        <img
+          src="images/hero-walk.png"
+          alt="Michelle and Tom walking together at The Verandah"
+          class="hero-image"
+          fetchpriority="high"
+        />
+        <div class="hero-veil" aria-hidden="true"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-kicker" data-i18n="heroKicker">Together with their families</p>
+        <h1 class="hero-names" data-i18n="brand">Michelle & Tom</h1>
+        <p class="hero-line" data-i18n="heroInvite">request the pleasure of your company at their wedding</p>
+        <div class="hero-cta">
+          <a class="btn" href="#rundown" data-i18n="ctaRundown">View the day</a>
+          <a class="btn btn-ghost" href="#venue" data-i18n="ctaVenue">Find the venue</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details" id="details">
+      <div class="section-inner narrow">
+        <p class="eyebrow" data-i18n="detailsEyebrow">Wedding Celebration</p>
+        <h2 class="section-title" data-i18n="detailsTitle">Join us for a day by the bay</h2>
+        <p class="section-lead" data-i18n="detailsLead">
+          We would be honoured to celebrate with you at The Verandah, The Repulse Bay.
+        </p>
+        <dl class="fact-list">
+          <div class="fact">
+            <dt data-i18n="labelDate">Date</dt>
+            <dd data-i18n="valueDate">Sunday, 13 December 2026</dd>
+          </div>
+          <div class="fact">
+            <dt data-i18n="labelTime">Time</dt>
+            <dd data-i18n="valueTime">10:00 AM – 3:00 PM</dd>
+          </div>
+          <div class="fact">
+            <dt data-i18n="labelPlace">Location</dt>
+            <dd data-i18n="valuePlace">The Verandah, The Repulse Bay</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section rundown" id="rundown">
+      <div class="section-inner narrow rundown-panel">
+        <h2 class="rundown-title" data-i18n="rundownTitle">The Day's Events</h2>
+        <p class="rundown-date" data-i18n="rundownDate">December 13, 2026</p>
+        <ol class="rundown-list">
+          <li>
+            <span class="rundown-time" data-i18n="r1t">10:00 AM</span>
+            <span class="rundown-event" data-i18n="r1e">Guest Arrival</span>
+          </li>
+          <li>
+            <span class="rundown-time" data-i18n="r2t">10:30 AM</span>
+            <span class="rundown-event" data-i18n="r2e">Vows and I Do's</span>
+          </li>
+          <li>
+            <span class="rundown-time" data-i18n="r3t">11:30 AM</span>
+            <span class="rundown-event" data-i18n="r3e">Cocktail Hour</span>
+          </li>
+          <li>
+            <span class="rundown-time" data-i18n="r4t">12:30 PM</span>
+            <span class="rundown-event" data-i18n="r4e">Wedding Lunch</span>
+          </li>
+          <li>
+            <span class="rundown-time" data-i18n="r5t">2:30 PM</span>
+            <span class="rundown-event" data-i18n="r5e">Cake & Farewell</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section venue" id="venue">
+      <div class="venue-layout">
+        <div class="venue-copy">
+          <p class="eyebrow" data-i18n="venueEyebrow">The Venue</p>
+          <h2 class="section-title" data-i18n="venueTitle">The Verandah</h2>
+          <p class="section-lead" data-i18n="venueLead">
+            A seaside garden setting at The Repulse Bay — nostalgic elegance, soft light, and the calm of the shore.
+          </p>
+          <p class="venue-address" data-i18n="venueAddress">
+            1/F, 109 Repulse Bay Road, Hong Kong
+          </p>
+          <a
+            class="btn"
+            href="https://www.therepulsebay.com/en/dining/the-verandah-afternoon-tea"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="venueLink"
+          >Visit venue website</a>
+        </div>
+        <figure class="venue-photo">
+          <img src="images/venue-front-lawn.png" alt="Outdoor wedding ceremony on the Front Lawn at The Repulse Bay overlooking the sea" />
+        </figure>
+      </div>
+
+      <div class="section-inner venue-spaces" id="notes">
+        <p class="eyebrow center" data-i18n="notesEyebrow">For our guests</p>
+        <h3 class="venue-spaces-title center" data-i18n="notesTitle">A few notes for the day</h3>
+        <p class="section-lead center" data-i18n="notesLead">
+          Everything you need to feel at ease as we celebrate together.
+        </p>
+        <div class="notes-grid">
+          <article class="note-card">
+            <p class="note-label" data-i18n="note1Label">Dress code</p>
+            <h4 class="note-heading" data-i18n="note1Title">Formal &amp; smart casual</h4>
+            <p class="note-body" data-i18n="note1Body">
+              Formal or smart casual attire is welcome. Soft colours suit the seaside setting; please avoid flip-flops and sleeveless shirts for gentlemen.
+            </p>
+          </article>
+          <article class="note-card">
+            <p class="note-label" data-i18n="note2Label">Arrival</p>
+            <h4 class="note-heading" data-i18n="note2Title">From 10:00 AM</h4>
+            <p class="note-body" data-i18n="note2Body">
+              Guests are invited to arrive from 10:00 AM. The ceremony begins at 10:30 AM on the Front Lawn.
+            </p>
+          </article>
+          <article class="note-card">
+            <p class="note-label" data-i18n="note3Label">Transport</p>
+            <h4 class="note-heading" data-i18n="note3Title">Shuttle bus</h4>
+            <p class="note-body" data-i18n="note3Body">
+              A complimentary shuttle bus will be arranged for guests. Pickup details and timing will be shared closer to the wedding day.
+            </p>
+          </article>
+          <article class="note-card">
+            <p class="note-label" data-i18n="note4Label">Parking</p>
+            <h4 class="note-heading" data-i18n="note4Title">Complimentary parking</h4>
+            <p class="note-body" data-i18n="note4Body">
+              Complimentary parking is available at The Repulse Bay for wedding guests on the day.
+            </p>
+          </article>
+        </div>
+
+        <div class="venue-map">
+          <div class="venue-map-copy">
+            <p class="eyebrow" data-i18n="mapEyebrow">Getting there</p>
+            <h3 class="venue-spaces-title" data-i18n="mapTitle">Find us on the map</h3>
+            <p class="section-lead" data-i18n="mapLead">
+              The Verandah, The Repulse Bay — 1/F, 109 Repulse Bay Road, Hong Kong.
+            </p>
+            <a
+              class="btn venue-map-btn"
+              href="https://www.google.com/maps/search/?api=1&amp;query=The+Verandah+The+Repulse+Bay+109+Repulse+Bay+Road+Hong+Kong"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="mapOpen"
+            >Open in Google Maps</a>
+          </div>
+          <div class="venue-map-frame">
+            <iframe
+              title="Google Map — The Verandah, The Repulse Bay"
+              src="https://www.google.com/maps?q=The+Verandah,+The+Repulse+Bay,+109+Repulse+Bay+Road,+Hong+Kong&amp;z=16&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="section-inner">
+        <p class="eyebrow center" data-i18n="galleryEyebrow">Moments</p>
+        <h2 class="section-title center" data-i18n="galleryTitle">Our story in frames</h2>
+        <div class="gallery-grid">
+          <figure class="g tall"><img src="images/gallery-embrace.png" alt="Michelle and Tom embracing" loading="lazy" /></figure>
+          <figure class="g"><img src="images/gallery-bench.png" alt="Sitting together on a wooden bench" loading="lazy" /></figure>
+          <figure class="g"><img src="images/gallery-trees.png" alt="Standing among the trees" loading="lazy" /></figure>
+          <figure class="g wide"><img src="images/gallery-lawn.png" alt="On the lawn at M+" loading="lazy" /></figure>
+          <figure class="g"><img src="images/gallery-kiss.png" alt="A kiss beneath the living wall" loading="lazy" /></figure>
+          <figure class="g tall"><img src="images/gallery-terrace.png" alt="Looking out over the harbour" loading="lazy" /></figure>
+          <figure class="g"><img src="images/gallery-stairs.png" alt="On the museum stairs" loading="lazy" /></figure>
+          <figure class="g"><img src="images/gallery-table.png" alt="Portrait at the table" loading="lazy" /></figure>
+          <figure class="g wide"><img src="images/gallery-lamps.png" alt="Under the pendant lamps" loading="lazy" /></figure>
+          <figure class="g"><img src="images/gallery-sit-grass.png" alt="Laughing on the grass" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closing">
+      <div class="section-inner narrow center">
+        <h2 class="closing-names" data-i18n="brand">Michelle & Tom</h2>
+        <p class="closing-line" data-i18n="closingLine">We cannot wait to celebrate with you.</p>
+        <p class="closing-date" data-i18n="valueDate">Sunday, 13 December 2026</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p data-i18n="footer">With love — Michelle & Tom</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
