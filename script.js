@@ -158,12 +158,39 @@ langButtons.forEach((btn) => {
   btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
 });
 
+function normalizeLang(value) {
+  if (!value) return null;
+  const lang = value.toLowerCase();
+  if (lang === "zh" || lang === "zh-hant" || lang === "zh-hk" || lang === "tc") {
+    return "zh";
+  }
+  if (lang === "en") return "en";
+  return null;
+}
+
+function getLangFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const fromQuery = normalizeLang(params.get("lang"));
+  if (fromQuery) return fromQuery;
+
+  const path = window.location.pathname.replace(/\/+$/, "");
+  if (path === "/zh" || path.endsWith("/zh")) return "zh";
+  if (path === "/en" || path.endsWith("/en")) return "en";
+
+  return null;
+}
+
 let initialLang = "en";
-try {
-  const saved = localStorage.getItem("mt-wedding-lang");
-  if (saved === "en" || saved === "zh") initialLang = saved;
-} catch (_) {
-  /* ignore */
+const urlLang = getLangFromUrl();
+if (urlLang) {
+  initialLang = urlLang;
+} else {
+  try {
+    const saved = localStorage.getItem("mt-wedding-lang");
+    if (saved === "en" || saved === "zh") initialLang = saved;
+  } catch (_) {
+    /* ignore */
+  }
 }
 setLanguage(initialLang);
 

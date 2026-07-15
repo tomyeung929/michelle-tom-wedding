@@ -23,3 +23,5 @@ Desktop.ini
 # Logs & caches
 *.log
 .cache/
+.vercel
+.env*
