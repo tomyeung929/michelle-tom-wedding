@@ -3,11 +3,11 @@
   "rewrites": [
     {
       "source": "/zh",
-      "destination": "/index.html"
+      "destination": "/"
     },
     {
       "source": "/en",
-      "destination": "/index.html"
+      "destination": "/"
     }
   ],
   "headers": [
